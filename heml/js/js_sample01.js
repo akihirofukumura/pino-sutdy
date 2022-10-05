@@ -15,20 +15,25 @@ console.log(`こんにちは${name}さん`);
 
 console.log(document.getElementById("btn"));
 
-const output = document.getElementById("output");
+// const output = document.getElementById("output");
 const text = document.getElementById("text");
-
+const content = document.getElementById("output")
+let contentText = content.textContent
 
 const hour = new Date().getHours();
 document.getElementById("btn").onclick = () => {
   console.log("cliclした")
   console.log(document.getElementById("text").value);
   if (hour >= 4 && hour < 11) {
-    document.getElementById("output").textContent = "おはよう";
+    document.getElementById("output").textContent = `おはよう、${text.value}さん`;
   } else if (hour >= 11 && hour < 17) {
-    document.getElementById("output").textContent = "こんにちは";
+    document.getElementById("output").textContent = `こんにちは、${text.value}さん`;
   } else {
-    document.getElementById("output").textContent = "こんばんわ";
+    document.getElementById("output").textContent = "こんばんわ" + text.value + "さん";
   }
-  document.getElementById("output").textContent += text.value + "さん";
 }
+
+
+// const someVar = "変数です"
+// const test = `あ、${someVar}`
+// console.log(test);
