@@ -19,8 +19,20 @@ const output = document.getElementById("output");
 const text = document.getElementById("text");
 
 
+const hour = new Date().getHours();
 document.getElementById("btn").onclick = () => {
   console.log("cliclした")
   console.log(document.getElementById("text").value);
-  output.innerText = text.value;
+  if(hour>=4&&hour<11){
+    document.getElementById("greeting").textContent = "おはよう";
+  }
+  else if(hour>=11&&hour<17){
+    document.getElementById("greeting").textContent = "こんにちは";
+  }
+  else{
+    document.getElementById("greeting").textContent = "こんばんわ";
+  }
+  console.log(output.innerText = text.value + "さん"
+  )
 }
+
