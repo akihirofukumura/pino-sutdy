@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,36 @@
     <link rel="stylesheet" href="/css/temp.css">
     <link rel="stylesheet" href="/ress/ress.css">
     <style type="text/css">
-        button,input{
+        button,
+        input {
             border: solid 1px #333;
             padding: 10px;
             display: block;
         }
-        button:hover{
+
+        button:hover {
             background-color: #efefef;
+        }
+
+        .rikuto{
+            display: flex;
         }
     </style>
     <title>Document</title>
 </head>
+
 <body>
-    <input type="text" id="text" value="なまえ">
-    <button id="btn">ボタン</button>
+
+    <input type="text" id="text" placeholder="なまえ">
+
+    <div class="rikuto">
+        <button id="btn">ボタン</button>
+        <button id="clear">削除</button>
+    </div>
+
+
     <p id="output"></p>
-    
-<script src="js/js_sample01.js"></script>
+    <script src="js/js_sample01.js"></script>
 </body>
+
 </html>

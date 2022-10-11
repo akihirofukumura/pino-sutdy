@@ -32,6 +32,11 @@ document.getElementById("btn").onclick = () => {
     document.getElementById("output").textContent = "こんばんわ" + text.value + "さん";
   }
 }
+document.getElementById("clear").onclick = () => {
+  document.getElementById("text").value="";
+  document.getElementById("output").textContent="";
+}
+
 
 
 // const someVar = "変数です"
