@@ -25,11 +25,11 @@ document.getElementById("btn").onclick = () => {
   console.log("cliclした")
   console.log(document.getElementById("text").value);
   if (hour >= 4 && hour < 11) {
-    document.getElementById("output").textContent = `おはよう、${text.value}さん`;
+    document.getElementById("output").innerHTML = `おはよう、${text.value}さん`;
   } else if (hour >= 11 && hour < 17) {
-    document.getElementById("output").textContent = `こんにちは、${text.value}さん`;
+    document.getElementById("output").innerHTML = `こんにちは、${text.value}さん`;
   } else {
-    document.getElementById("output").textContent = "こんばんわ" + text.value + "さん";
+    document.getElementById("output").innerHTML = "こんばんわ<li>" + text.value + "</li>さん";
   }
 }
 document.getElementById("clear").onclick = () => {
