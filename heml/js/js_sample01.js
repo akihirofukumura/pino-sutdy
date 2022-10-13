@@ -32,9 +32,10 @@ document.getElementById("btn").onclick = () => {
     document.getElementById("output").innerHTML = "こんばんわ<li>" + text.value + "</li>さん";
   }
 }
+
 document.getElementById("clear").onclick = () => {
   document.getElementById("text").value="";
-  document.getElementById("output").textContent="";
+  document.getElementById("output").textContent=""
 }
 
 
