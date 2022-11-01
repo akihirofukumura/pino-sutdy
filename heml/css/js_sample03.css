@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.box{
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
