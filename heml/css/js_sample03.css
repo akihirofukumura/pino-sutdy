@@ -7,6 +7,9 @@
 }
 
 .box{
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: black;
   width: 100px;
   height: 100px;
