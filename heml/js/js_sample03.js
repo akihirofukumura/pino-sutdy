@@ -18,8 +18,10 @@ container.addEventListener("mousemove",function(e){
   const x = e.clientX
   const y = e.clientY
   
+  if(isMauseDown){
+    box.style.top = `${y-50}px`;
+    box.style.left =`${x-50}px`;
+  }
 
-  box.style.top = `${y-50}px`;
-  box.style.left =`${x-50}px`;
 })
 
