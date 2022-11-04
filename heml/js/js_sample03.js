@@ -1,6 +1,5 @@
 const container = document.getElementById("container");
 const box = document.getElementById("box");
-
 let isMauseDown = false;
 
 box.addEventListener("mousedown",function(){
@@ -25,3 +24,5 @@ container.addEventListener("mousemove",function(e){
 
 })
 
+console.log(container.addEventListener("mousemove",function(e){
+}))
