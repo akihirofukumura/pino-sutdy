@@ -17,5 +17,6 @@ console.log(arr);
 arr.push(300);
 
 // 配列を消すのを書く
-console.lo;
+console.log(arr);
+arr.shift();
 console.log(arr);
